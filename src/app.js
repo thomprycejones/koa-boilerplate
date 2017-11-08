@@ -3,7 +3,7 @@ const koaBody = require('koa-body');
 const koaLogger = require('koa-logger');
 const session = require('koa-session');
 const routes = require('./routes');
-// const orm = require('./models');
+const orm = require('./models');
 // App constructor
 const app = new Koa();
 
@@ -15,7 +15,7 @@ app.keys = [
 ];
 
 // expose ORM through context's prototype
-// app.context.orm = orm;
+app.context.orm = orm;
 
 /**
  * Middlewares
