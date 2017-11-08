@@ -2,29 +2,33 @@ const config = {
   default: {
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
-    dialect: process.env.DB_DIALECT || 'postgres',
+    dialect: process.env.DB_DIALECT || "postgres",
     database: process.env.DB_NAME,
-    host: process.env.DB_HOST || '127.0.0.1',
+    host: process.env.DB_HOST || "127.0.0.1",
   },
   development: {
-    extend: 'default',
-    database: 'boilerplate',
+    extend: "default",
+    database: "boilerplate",
   },
   test: {
-    extend: 'default',
-    database: 'boilerplate',
+    extend: "default",
+    database: "boilerplate",
   },
   production: {
-    extend: 'default',
-    use_env_variable: 'DATABASE_URL',
+    extend: "default",
+    use_env_variable: "DATABASE_URL",
   },
-};
+}
 
-Object.keys(config).forEach((configKey) => {
-  const configValue = config[configKey];
+Object.keys(config).forEach(configKey => {
+  const configValue = config[configKey]
   if (configValue.extend) {
-    config[configKey] = Object.assign({}, config[configValue.extend], configValue);
+    config[configKey] = Object.assign(
+      {},
+      config[configValue.extend],
+      configValue
+    )
   }
-});
+})
 
-module.exports = config;
+module.exports = config
