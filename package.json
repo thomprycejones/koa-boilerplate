@@ -23,7 +23,7 @@
     "dev": "nodemon index.js",
     "lint": "eslint ./src index.js",
     "lint:fix": "eslint --fix ./src index.js",
-    "heroku-postbuild": "yarn run build-assets && sequelize db:migrate"
+    "heroku-postbuild": "sequelize db:migrate"
   },
   "devDependencies": {
     "eslint": "^4.10.0"
