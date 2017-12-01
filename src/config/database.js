@@ -8,11 +8,11 @@ const config = {
   },
   development: {
     extend: "default",
-    database: "boilerplate",
+    database: "boilerplate_dev",
   },
   test: {
     extend: "default",
-    database: "boilerplate",
+    database: "boilerplate_test",
   },
   production: {
     extend: "default",
