@@ -33,5 +33,10 @@ $ nano .envrc
 
 Start your server and code!
 ```sh
-$ yarn start
+$ yarn dev
 ```
+
+## ToDo:
+
+- Make Tests with jest
+- Config CircleCI
