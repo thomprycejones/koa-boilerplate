@@ -22,3 +22,5 @@ router.post("auth", "/", async ctx => {
     ctx.throw(401, "Wrong e-mail or password")
   }
 })
+
+module.exports = router
