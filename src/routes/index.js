@@ -2,8 +2,10 @@ const KoaRouter = require("koa-router")
 
 const router = new KoaRouter()
 
-router.get("hello", "/", ctx => {
-  ctx.body = "Hello World!!"
+router.get("index", "/", ctx => {
+  ctx.body = {
+    message: "Hello World",
+  }
 })
 
 module.exports = router
