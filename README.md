@@ -1,8 +1,12 @@
 # Koa API Boilerplate (MC)
 
+[![circleciB]][circleciL]
+[![styleB]][styleL]
+
+
 ## Requirements
-- Node 9.2.0
-- Yarn 1.3.2
+- Node >=8.5.0
+- Yarn >=1.0.1
 - Postgres
 
 ## Install
@@ -13,6 +17,7 @@ $ sudo su postgres
 $ createdb databaseName
 $ exit
 ```
+Also you may change the name of database in `config/database.js`
 
 Clone this repo
 ```sh
@@ -36,7 +41,18 @@ Start your server and code!
 $ yarn dev
 ```
 
-## ToDo:
+## Using default Auth
 
-- Make Tests with jest
-- Config CircleCI
+Implemented authentication use JWT.
+To get it
+```sh
+$ git pull origin auth
+```
+
+<!-- Badges -->
+
+[circleciL]:https://circleci.com/gh/gsulloa/koa-boilerplate
+[circleciB]:https://circleci.com/gh/gsulloa/koa-boilerplate.svg?style=svg
+
+[styleL]:https://github.com/prettier/prettier
+[styleB]:https://img.shields.io/badge/code%20style-prettier-brightgreen.svg?style=flat
