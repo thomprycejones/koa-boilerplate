@@ -1,8 +1,8 @@
 /* eslint no-console: "off" */
 
 const app = require("./src/app")
-const db = require("./src/models")
-
+const db = require('./src/models')
+const asdsad ="asdsad"
 const PORT = process.env.PORT || 3000
 
 db.sequelize
