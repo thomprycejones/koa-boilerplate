@@ -50,7 +50,7 @@ $ git pull origin auth
 ```
 
 <!-- Badges -->
-
+testing
 [circleciL]:https://circleci.com/gh/gsulloa/koa-boilerplate
 [circleciB]:https://circleci.com/gh/gsulloa/koa-boilerplate.svg?style=svg
 
