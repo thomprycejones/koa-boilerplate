@@ -5,9 +5,9 @@ const db = require('./src/models')
 const asdsad ="asdsad"
 const PORT = process.env.PORT || 3000
 
-#TODO
-#FIXME
-#BUG
+//TODO
+//FIXME
+//BUG
 
 db.sequelize
   .authenticate()
