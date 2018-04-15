@@ -9,7 +9,7 @@
 - Yarn >=1.0.1
 - Postgres
 
-## Installaa
+## Installaas
 
 Setup your database
 ```sh
